@@ -10,5 +10,13 @@ module.exports = {
   devServer: {
     contentBase: "./dist"
   },
-  plugins: [new CopyWebpackPlugin([{ from: "public" }])]
+  plugins: [new CopyWebpackPlugin([{ from: "public" }])],
+  module: {
+    rules: [
+      {
+        test: /\.s[ac]ss$/i,
+        use: ["style-loader", "css-loader", "sass-loader"]
+      }
+    ]
+  }
 };
