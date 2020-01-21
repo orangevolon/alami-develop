@@ -1,0 +1,19 @@
+{
+  "name": "alami-develop",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orangevolon/alami-develop.git"
+  },
+  "author": "Amir Alami",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/orangevolon/alami-develop/issues"
+  },
+  "homepage": "https://github.com/orangevolon/alami-develop#readme"
+}
