@@ -2,6 +2,7 @@ import "./App.scss";
 import { Avatar } from "./components";
 import { PUBSUB_SCROLL } from "./constants";
 import { withPubSub, withDOM } from "./hocs";
+import Skills from "./components/skills/Skills";
 
 const App = ({ pubSub, window }) => {
   // publish scroll event
@@ -9,16 +10,17 @@ const App = ({ pubSub, window }) => {
     pubSub.publish(PUBSUB_SCROLL, window.scrollY);
   });
 
-  const root = document.createDocumentFragment();
+  const element = document.createDocumentFragment();
 
   const title = document.createElement("h1");
   title.innerText = "Amir Alami";
   title.className = "name";
 
-  root.appendChild(Avatar());
-  root.appendChild(title);
+  element.appendChild(Avatar());
+  element.appendChild(title);
+  element.appendChild(Skills());
 
-  return root;
+  return element;
 };
 
 export default withPubSub(withDOM(App));
