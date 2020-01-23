@@ -1,7 +1,24 @@
 import "./App.scss";
-import avatar from "./avatar.png";
+import { Avatar } from "./components";
+import { PUBSUB_SCROLL } from "./constants";
+import { withPubSub, withDOM } from "./hocs";
 
-export default () => `
-    <img class="avatar" src="${avatar}" />
-    <h1 class="name">Amir Alami</h1>
-`;
+const App = ({ pubSub, window }) => {
+  // publish scroll event
+  window.addEventListener("scroll", () => {
+    pubSub.publish(PUBSUB_SCROLL, window.scrollY);
+  });
+
+  const root = document.createDocumentFragment();
+
+  const title = document.createElement("h1");
+  title.innerText = "Amir Alami";
+  title.className = "name";
+
+  root.appendChild(Avatar());
+  root.appendChild(title);
+
+  return root;
+};
+
+export default withPubSub(withDOM(App));
