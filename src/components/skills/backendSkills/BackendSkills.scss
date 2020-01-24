@@ -1,0 +1,42 @@
+@import "../../../assets/styles/badge.scss";
+
+.backend-skill__article {
+  .badges__div {
+    height: 380px;
+  }
+
+  .node-badge__img {
+    @include badge(2);
+
+    left: 20%;
+    top: 0;
+  }
+
+  .express-badge__img {
+    @include badge(1.8);
+
+    left: 60%;
+    top: 30%;
+  }
+
+  .csharp-badge__img {
+    @include badge(2);
+
+    left: 20%;
+    top: 50%;
+  }
+
+  .firebase-badge__img {
+    @include badge(1.6);
+
+    left: 60%;
+    top: 70%;
+  }
+
+  .firestore-badge__img {
+    @include badge(1.4);
+
+    left: 40%;
+    top: 100%;
+  }
+}

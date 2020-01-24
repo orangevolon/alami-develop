@@ -1,0 +1,35 @@
+@import "../../../assets/styles/badge.scss";
+
+.ux-skill__article {
+  .badges__div {
+    height: 300px;
+  }
+
+  .photoshop-badge__img {
+    @include badge(0.6);
+
+    left: 50%;
+    top: 0;
+  }
+
+  .illustrator-badge__img {
+    @include badge(0.8);
+
+    left: 35%;
+    top: 30%;
+  }
+
+  .sketch-badge__img {
+    @include badge(1.2);
+
+    top: 40%;
+    left: 80%;
+  }
+
+  .xd-badge__img {
+    @include badge(0.85);
+
+    top: 70%;
+    left: 50%;
+  }
+}

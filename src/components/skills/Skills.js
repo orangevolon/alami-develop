@@ -1,7 +1,7 @@
 import { withDOM } from "../../hocs";
 import BackendSkill from "./backendSkills/BackendSkills";
 import FrontendSkills from "./frontendSkills/FrontendSkills";
-import UxSkills from "./uxSkills/uxSkillss";
+import UxSkills from "./uxSkills/UxSkills";
 import "./Skills.scss";
 import InfrastructureBadge from "./infrastructureSkills/InfrastructureSkills";
 

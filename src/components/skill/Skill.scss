@@ -11,9 +11,8 @@
   margin-bottom: 4rem;
 
   .badges__div {
+    position: relative;
     grid-area: badges;
-    display: flex;
-    flex-wrap: wrap;
   }
 
   .title__h3 {

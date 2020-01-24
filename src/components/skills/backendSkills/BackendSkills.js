@@ -5,6 +5,7 @@ import expressBadge from "../../../assets/badges/express.svg";
 import csharpBadge from "../../../assets/badges/csharp.svg";
 import firebaseBadge from "../../../assets/badges/firebase.svg";
 import firestoreBadge from "../../../assets/badges/firestore.svg";
+import "./BackendSkills.scss";
 
 const BackendSkill = () => {
   const nodeBadgeElement = Badge({ src: nodeBadge });
@@ -14,7 +15,7 @@ const BackendSkill = () => {
   expressBadgeElement.classList.add("express-badge__img");
 
   const csharpBadgeElement = Badge({ src: csharpBadge });
-  csharpBadgeElement.classList.add("scharp-badge__img");
+  csharpBadgeElement.classList.add("csharp-badge__img");
 
   const firebaseBadgeElement = Badge({ src: firebaseBadge });
   firebaseBadgeElement.classList.add("firebase-badge__img");
@@ -22,7 +23,7 @@ const BackendSkill = () => {
   const firestoreBadgeElement = Badge({ src: firestoreBadge });
   firestoreBadgeElement.classList.add("firestore-badge__img");
 
-  return Skill({
+  const skillElement = Skill({
     badges: [
       nodeBadgeElement,
       expressBadgeElement,
@@ -33,6 +34,9 @@ const BackendSkill = () => {
     title: "Back End Development",
     description: "Lorem Ipsum"
   });
+  skillElement.classList.add("backend-skill__article");
+
+  return skillElement;
 };
 
 export default BackendSkill;

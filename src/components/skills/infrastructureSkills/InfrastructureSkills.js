@@ -4,10 +4,11 @@ import kubernetesBadge from "../../../assets/badges/kubernetes.svg";
 import jenkinsBadge from "../../../assets/badges/jenkins.svg";
 import gcpBadge from "../../../assets/badges/gcp.svg";
 import linuxBadge from "../../../assets/badges/linux.svg";
+import "./InfrastructureSkills.scss";
 
 const InfrastructureBadge = () => {
   const kubernetesBadgeElement = Badge({ src: kubernetesBadge });
-  kubernetesBadgeElement.classList.add("kuberenetes-badge__img");
+  kubernetesBadgeElement.classList.add("kubernetes-badge__img");
 
   const jenkinsBadgeElement = Badge({ src: jenkinsBadge });
   jenkinsBadgeElement.classList.add("jenkins-badge__img");
@@ -18,7 +19,7 @@ const InfrastructureBadge = () => {
   const linuxBadgeElement = Badge({ src: linuxBadge });
   linuxBadgeElement.classList.add("linux-badge__img");
 
-  return Skill({
+  const skillElement = Skill({
     badges: [
       kubernetesBadgeElement,
       jenkinsBadgeElement,
@@ -28,6 +29,9 @@ const InfrastructureBadge = () => {
     title: "Infrastructure",
     description: "Lorem Ipsum"
   });
+  skillElement.classList.add("infrastructure-skill__article");
+
+  return skillElement;
 };
 
 export default InfrastructureBadge;

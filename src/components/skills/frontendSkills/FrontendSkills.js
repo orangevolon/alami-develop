@@ -7,6 +7,7 @@ import reduxBadge from "../../../assets/badges/redux.svg";
 import reactBadge from "../../../assets/badges/react.svg";
 import jestBadge from "../../../assets/badges/jest.svg";
 import jsBadge from "../../../assets/badges/js.svg";
+import "./FrontendSkills.scss";
 
 const FrontendSkills = () => {
   const cssBadgeElement = Badge({ src: cssBadge });
@@ -30,7 +31,7 @@ const FrontendSkills = () => {
   const jsBadgeElement = Badge({ src: jsBadge });
   jsBadgeElement.classList.add("js-badge__img");
 
-  return Skill({
+  const skillElement = Skill({
     badges: [
       cssBadgeElement,
       htmlBadgeElement,
@@ -43,6 +44,9 @@ const FrontendSkills = () => {
     title: "Front End Development",
     description: "Lorem Ipsum"
   });
+  skillElement.classList.add("frontend-skill__article");
+
+  return skillElement;
 };
 
 export default FrontendSkills;
