@@ -2,7 +2,7 @@
 
 .infrastructure-skill__article {
   .badges__div {
-    height: 200px;
+    height: 280px;
   }
 
   .kubernetes-badge__img {
@@ -15,21 +15,21 @@
   .jenkins-badge__img {
     @include badge(0.8);
 
-    left: 60%;
-    top: 50%;
+    left: 63%;
+    top: 67%;
   }
 
   .gcp-badge__img {
     @include badge(0.8);
 
-    left: 50%;
-    top: 60%;
+    left: 32%;
+    top: 61%;
   }
 
   .linux-badge__img {
     @include badge(0.6);
 
-    left: 50%;
-    top: 100%;
+    left: 40%;
+    top: 96%;
   }
 }

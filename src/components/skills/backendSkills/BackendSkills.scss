@@ -8,35 +8,35 @@
   .node-badge__img {
     @include badge(2);
 
-    left: 20%;
-    top: 0;
+    left: 26%;
+    top: 9%;
   }
 
   .express-badge__img {
     @include badge(1.8);
 
-    left: 60%;
-    top: 30%;
+    left: 74%;
+    top: 29%;
   }
 
   .csharp-badge__img {
     @include badge(2);
 
-    left: 20%;
-    top: 50%;
+    left: 17%;
+    top: 56%;
   }
 
   .firebase-badge__img {
     @include badge(1.6);
 
-    left: 60%;
-    top: 70%;
+    left: 75%;
+    top: 65%;
   }
 
   .firestore-badge__img {
     @include badge(1.4);
 
-    left: 40%;
+    left: 41%;
     top: 100%;
   }
 }
