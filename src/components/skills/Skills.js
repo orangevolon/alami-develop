@@ -21,9 +21,11 @@ import jenkinsBadge from "../../assets/badges/jenkins.svg";
 import gcpBadge from "../../assets/badges/gcp.svg";
 import linuxBadge from "../../assets/badges/linux.svg";
 import Skill from "../skill/Skill";
+import "./Skills.scss";
 
 const Skills = ({ document }) => {
-  const element = document.createElement("div");
+  const element = document.createElement("section");
+  element.className = "skills__section";
 
   const uxSkillBadges = [
     Badge({ src: photoshopBadge }),
