@@ -20,30 +20,70 @@ import kubernetesBadge from "../../assets/badges/kubernetes.svg";
 import jenkinsBadge from "../../assets/badges/jenkins.svg";
 import gcpBadge from "../../assets/badges/gcp.svg";
 import linuxBadge from "../../assets/badges/linux.svg";
+import Skill from "../skill/Skill";
 
 const Skills = ({ document }) => {
   const element = document.createElement("div");
 
-  element.appendChild(Badge({ src: photoshopBadge }));
-  element.appendChild(Badge({ src: illustratorBadge }));
-  element.appendChild(Badge({ src: sketchBadge }));
-  element.appendChild(Badge({ src: xdBadge }));
-  element.appendChild(Badge({ src: cssBadge }));
-  element.appendChild(Badge({ src: htmlBadge }));
-  element.appendChild(Badge({ src: vueBadge }));
-  element.appendChild(Badge({ src: reduxBadge }));
-  element.appendChild(Badge({ src: reactBadge }));
-  element.appendChild(Badge({ src: jestBadge }));
-  element.appendChild(Badge({ src: jsBadge }));
-  element.appendChild(Badge({ src: nodeBadge }));
-  element.appendChild(Badge({ src: expressBadge }));
-  element.appendChild(Badge({ src: csharpBadge }));
-  element.appendChild(Badge({ src: firebaseBadge }));
-  element.appendChild(Badge({ src: firestoreBadge }));
-  element.appendChild(Badge({ src: kubernetesBadge }));
-  element.appendChild(Badge({ src: jenkinsBadge }));
-  element.appendChild(Badge({ src: gcpBadge }));
-  element.appendChild(Badge({ src: linuxBadge }));
+  const uxSkillBadges = [
+    Badge({ src: photoshopBadge }),
+    Badge({ src: illustratorBadge }),
+    Badge({ src: sketchBadge }),
+    Badge({ src: xdBadge })
+  ];
+  element.appendChild(
+    Skill({
+      badges: uxSkillBadges,
+      title: "UI/UX",
+      description: "Lorem Ipsum"
+    })
+  );
+
+  const frontendBadges = [
+    Badge({ src: cssBadge }),
+    Badge({ src: htmlBadge }),
+    Badge({ src: vueBadge }),
+    Badge({ src: reduxBadge }),
+    Badge({ src: reactBadge }),
+    Badge({ src: jestBadge }),
+    Badge({ src: jsBadge })
+  ];
+  element.appendChild(
+    Skill({
+      badges: frontendBadges,
+      title: "Front End Development",
+      description: "Lorem Ipsum"
+    })
+  );
+
+  const backendBadges = [
+    Badge({ src: nodeBadge }),
+    Badge({ src: expressBadge }),
+    Badge({ src: csharpBadge }),
+    Badge({ src: firebaseBadge }),
+    Badge({ src: firestoreBadge })
+  ];
+  element.appendChild(
+    Skill({
+      badges: backendBadges,
+      title: "Back End Development",
+      description: "Lorem Ipsum"
+    })
+  );
+
+  const infrastructureBadges = [
+    Badge({ src: kubernetesBadge }),
+    Badge({ src: jenkinsBadge }),
+    Badge({ src: gcpBadge }),
+    Badge({ src: linuxBadge })
+  ];
+  element.appendChild(
+    Skill({
+      badges: infrastructureBadges,
+      title: "Infrastructure",
+      description: "Lorem Ipsum"
+    })
+  );
 
   return element;
 };
