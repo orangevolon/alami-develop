@@ -1,6 +1,7 @@
 import Skill from "../../skill/Skill";
 import Badge from "../../badge/Badge";
 import kubernetesBadge from "../../../assets/badges/kubernetes.svg";
+import dockerBadge from "../../../assets/badges/docker.svg";
 import jenkinsBadge from "../../../assets/badges/jenkins.svg";
 import gcpBadge from "../../../assets/badges/gcp.svg";
 import linuxBadge from "../../../assets/badges/linux.svg";
@@ -9,6 +10,9 @@ import "./InfrastructureSkills.scss";
 const InfrastructureBadge = () => {
   const kubernetesBadgeElement = Badge({ src: kubernetesBadge });
   kubernetesBadgeElement.classList.add("kubernetes-badge__img");
+
+  const dockerBadgeElement = Badge({ src: dockerBadge });
+  dockerBadgeElement.classList.add("docker-badge__img");
 
   const jenkinsBadgeElement = Badge({ src: jenkinsBadge });
   jenkinsBadgeElement.classList.add("jenkins-badge__img");
@@ -22,6 +26,7 @@ const InfrastructureBadge = () => {
   const skillElement = Skill({
     badges: [
       kubernetesBadgeElement,
+      dockerBadgeElement,
       jenkinsBadgeElement,
       gcpBadgeElement,
       linuxBadgeElement

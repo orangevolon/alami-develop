@@ -12,6 +12,13 @@
     top: 20%;
   }
 
+  .docker-badge__img {
+    @include badge(1.4);
+
+    left: 64%;
+    top: 20%;
+  }
+
   .jenkins-badge__img {
     @include badge(0.8);
 
