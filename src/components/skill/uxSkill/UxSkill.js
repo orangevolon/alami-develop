@@ -1,12 +1,12 @@
-import Skill from "../../skill/Skill";
+import Skill from "../Skill";
 import Badge from "../../badge/Badge";
 import photoshopBadge from "../../../assets/badges/photoshop.svg";
 import illustratorBadge from "../../../assets/badges/illustrator.svg";
 import sketchBadge from "../../../assets/badges/sketch.svg";
 import xdBadge from "../../../assets/badges/xd.svg";
-import "./UxSkills.scss";
+import "./UxSkill.scss";
 
-const UxSkills = () => {
+const UxSkill = () => {
   const photoshopBadgeElement = Badge({ src: photoshopBadge });
   photoshopBadgeElement.classList.add("photoshop-badge__img");
 
@@ -34,4 +34,4 @@ const UxSkills = () => {
   return skillElement;
 };
 
-export default UxSkills;
+export default UxSkill;

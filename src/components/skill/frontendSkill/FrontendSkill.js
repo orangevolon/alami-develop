@@ -1,5 +1,5 @@
 import Badge from "../../badge/Badge";
-import Skill from "../../skill/Skill";
+import Skill from "../Skill";
 import cssBadge from "../../../assets/badges/css.svg";
 import htmlBadge from "../../../assets/badges/html.svg";
 import vueBadge from "../../../assets/badges/vue.svg";
@@ -7,9 +7,9 @@ import reduxBadge from "../../../assets/badges/redux.svg";
 import reactBadge from "../../../assets/badges/react.svg";
 import jestBadge from "../../../assets/badges/jest.svg";
 import jsBadge from "../../../assets/badges/js.svg";
-import "./FrontendSkills.scss";
+import "./FrontendSkill.scss";
 
-const FrontendSkills = () => {
+const FrontendSkill = () => {
   const cssBadgeElement = Badge({ src: cssBadge });
   cssBadgeElement.classList.add("css-badge__img");
 
@@ -49,4 +49,4 @@ const FrontendSkills = () => {
   return skillElement;
 };
 
-export default FrontendSkills;
+export default FrontendSkill;

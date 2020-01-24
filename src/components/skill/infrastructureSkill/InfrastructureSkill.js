@@ -1,13 +1,13 @@
-import Skill from "../../skill/Skill";
+import Skill from "../Skill";
 import Badge from "../../badge/Badge";
 import kubernetesBadge from "../../../assets/badges/kubernetes.svg";
 import dockerBadge from "../../../assets/badges/docker.svg";
 import jenkinsBadge from "../../../assets/badges/jenkins.svg";
 import gcpBadge from "../../../assets/badges/gcp.svg";
 import linuxBadge from "../../../assets/badges/linux.svg";
-import "./InfrastructureSkills.scss";
+import "./InfrastructureSkill.scss";
 
-const InfrastructureBadge = () => {
+const InfrastructureSkill = () => {
   const kubernetesBadgeElement = Badge({ src: kubernetesBadge });
   kubernetesBadgeElement.classList.add("kubernetes-badge__img");
 
@@ -39,4 +39,4 @@ const InfrastructureBadge = () => {
   return skillElement;
 };
 
-export default InfrastructureBadge;
+export default InfrastructureSkill;
