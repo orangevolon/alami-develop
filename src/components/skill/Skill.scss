@@ -1,0 +1,25 @@
+.skill__article {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "badges title"
+    "badges description";
+  column-gap: 4rem;
+  row-gap: 1rem;
+
+  margin-bottom: 4rem;
+
+  .badges__div {
+    position: relative;
+    grid-area: badges;
+  }
+
+  .title__h3 {
+    grid-area: title;
+  }
+
+  .description__p {
+    grid-area: description;
+  }
+}

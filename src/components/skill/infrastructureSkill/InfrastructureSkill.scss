@@ -1,0 +1,42 @@
+@import "../../../assets/styles/badge.scss";
+
+.infrastructure-skill__article {
+  .badges__div {
+    height: 280px;
+  }
+
+  .kubernetes-badge__img {
+    @include badge(0.9);
+
+    left: 20%;
+    top: 20%;
+  }
+
+  .docker-badge__img {
+    @include badge(1.4);
+
+    left: 64%;
+    top: 20%;
+  }
+
+  .jenkins-badge__img {
+    @include badge(0.8);
+
+    left: 63%;
+    top: 67%;
+  }
+
+  .gcp-badge__img {
+    @include badge(0.8);
+
+    left: 32%;
+    top: 61%;
+  }
+
+  .linux-badge__img {
+    @include badge(0.6);
+
+    left: 40%;
+    top: 96%;
+  }
+}
