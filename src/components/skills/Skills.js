@@ -1,18 +1,18 @@
 import { withDOM } from "../../hocs";
-import BackendSkill from "./backendSkills/BackendSkills";
-import FrontendSkills from "./frontendSkills/FrontendSkills";
-import UxSkills from "./uxSkills/UxSkills";
+import BackendSkill from "../skill/backendSkill/BackendSkill";
+import FrontendSkill from "../skill/frontendSkill/FrontendSkill";
+import UxSkills from "../skill/uxSkill/UxSkill";
+import InfrastructureSkill from "../skill/infrastructureSkill/InfrastructureSkill";
 import "./Skills.scss";
-import InfrastructureBadge from "./infrastructureSkills/InfrastructureSkills";
 
 const Skills = ({ document }) => {
   const element = document.createElement("section");
   element.className = "skills__section";
 
   element.appendChild(UxSkills());
-  element.appendChild(FrontendSkills());
+  element.appendChild(FrontendSkill());
   element.appendChild(BackendSkill());
-  element.appendChild(InfrastructureBadge());
+  element.appendChild(InfrastructureSkill());
 
   return element;
 };
