@@ -1,4 +1,4 @@
-import { withDOM } from "../../hocs";
+import { withDOM } from "@hocs";
 import "./Skill.scss";
 
 const Skill = ({ badges = [], document, title = "", description = "" }) => {

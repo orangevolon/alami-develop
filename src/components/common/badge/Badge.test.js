@@ -1,6 +1,6 @@
 import Badge from "./Badge";
 
-jest.mock("../../hocs", () => ({
+jest.mock("@hocs", () => ({
   withPubSub: Component => Component,
   withDOM: Component => props =>
     Component({ document: global.document, ...props })

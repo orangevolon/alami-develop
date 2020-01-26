@@ -1,10 +1,10 @@
-import Skill from "../Skill";
-import Badge from "../../badge/Badge";
-import nodeBadge from "../../../assets/badges/node.svg";
-import expressBadge from "../../../assets/badges/express.svg";
-import csharpBadge from "../../../assets/badges/csharp.svg";
-import firebaseBadge from "../../../assets/badges/firebase.svg";
-import firestoreBadge from "../../../assets/badges/firestore.svg";
+import { Skill, Badge } from "@components";
+import nodeBadge from "@assets/badges/node.svg";
+import expressBadge from "@assets/badges/express.svg";
+import csharpBadge from "@assets/badges/csharp.svg";
+import firebaseBadge from "@assets/badges/firebase.svg";
+import firestoreBadge from "@assets/badges/firestore.svg";
+
 import "./BackendSkill.scss";
 
 const BackendSkill = () => {

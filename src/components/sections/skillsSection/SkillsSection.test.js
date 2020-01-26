@@ -1,7 +1,7 @@
-import Skills from "./Skills";
+import SkillsSection from "./SkillsSection";
 
 describe("Testing components/skills/Skill", () => {
   it("Should render the component correctly", () => {
-    expect(Skills({})).toMatchSnapshot();
+    expect(SkillsSection({})).toMatchSnapshot();
   });
 });

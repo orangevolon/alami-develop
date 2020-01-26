@@ -13,5 +13,11 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: "module"
   },
-  rules: {}
+  settings: {
+    "import/resolver": "webpack"
+  },
+  rules: {
+    // Eslint seems to have issue detecting named exports
+    "import/no-cycle": "off"
+  }
 };
