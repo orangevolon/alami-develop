@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing components/sections/splashSection Should render component correctly 1`] = `
+<section
+  class="splash-section__section"
+>
+  <img
+    class="picture__img"
+    height="200"
+    src="[object Object]"
+    width="200"
+  />
+  <div
+    class="content-wrapper__div"
+  >
+    <h1
+      class="title__h1"
+    />
+    <p
+      class="description__p"
+    >
+      
+    Senior Full Stack Developer
+      <br />
+      
+    30 years old,
+      <br />
+      
+    +10 years of experience
+  
+    </p>
+  </div>
+</section>
+`;
