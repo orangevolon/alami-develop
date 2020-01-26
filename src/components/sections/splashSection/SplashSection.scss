@@ -1,18 +1,25 @@
 @import "../../../assets/styles/grid.scss";
+@import "../../../assets/styles/section.scss";
 
 .splash-section__section {
-  @include content-grid;
+  @include section;
 
-  position: relative;
-  width: 100%;
   height: calc(100vh - 10rem);
-  background-color: gray;
+  display: flex;
+
+  .content-wrapper__div {
+    @include content-grid;
+
+    margin-top: auto;
+    margin-bottom: 0;
+  }
 
   .title__h1 {
     grid-area: title;
     position: relative;
     color: white;
-    font-size: 5rem;
+    font-size: 3rem;
+    text-transform: uppercase;
   }
 
   .description__p {

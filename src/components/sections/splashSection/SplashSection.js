@@ -14,15 +14,27 @@ const SplashSection = ({ document, pubSub }) => {
   pictureElement.height = 200;
   element.appendChild(pictureElement);
 
+  const contentWrapper = document.createElement("div");
+  contentWrapper.className = "content-wrapper__div";
+  element.appendChild(contentWrapper);
+
   const titleElement = document.createElement("h1");
   titleElement.className = "title__h1";
   titleElement.innerText = "Amir Alami";
-  element.appendChild(titleElement);
+  contentWrapper.appendChild(titleElement);
+
+  const age = Math.floor(
+    (Date.now() - new Date(1989, 6, 15)) / (1000 * 3600 * 24 * 365)
+  );
 
   const descriptionElement = document.createElement("p");
   descriptionElement.className = "description__p";
-  descriptionElement.innerText = "Senior Full Stack Developer";
-  element.appendChild(descriptionElement);
+  descriptionElement.innerHTML = `
+    Senior Full Stack Developer<br/>
+    ${age} years old,<br/>
+    +10 years of experience
+  `;
+  contentWrapper.appendChild(descriptionElement);
 
   pubSub.subscribe(PUBSUB_SCROLL, e => {
     pictureElement.style.transform = `translateY(${e / 2}px)`;

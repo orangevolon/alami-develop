@@ -1,5 +1,6 @@
 @mixin content-grid {
   width: 100vw;
+  max-width: 1280px;
   padding: 0 3rem;
   margin: auto;
   display: grid;
