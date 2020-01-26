@@ -1,0 +1,45 @@
+.splash-section__section {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 10rem);
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10rem;
+
+  .title__h1 {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 5rem;
+  }
+
+  .description__p {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .picture__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.2;
+  }
+
+  &:before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #419fd9 0%, #023440 100%);
+  }
+}
