@@ -1,8 +1,9 @@
 import "./App.scss";
+import SplashSection from "@components/sections/splashSection/SplashSection";
 import { PUBSUB_SCROLL } from "./constants";
 import { withPubSub, withDOM } from "./hocs";
 import Skills from "./components/skills/Skills";
-import SplashSection from "./components/sections/splashSection/SplashSection";
+// import SplashSection from "./components/sections/splashSection/SplashSection";
 
 const App = ({ pubSub, window }) => {
   // publish scroll event
