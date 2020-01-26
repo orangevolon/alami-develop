@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing components/skill/FrontendSkill Should render the component correctly 1`] = `
+<article
+  class="skill__article backend-skill__article"
+>
+  <h3
+    class="title__h3"
+  />
+  <p
+    class="description__p"
+  />
+  <div
+    class="badges__div"
+  >
+    <img
+      class="node-badge__img"
+      src="[object Object]"
+    />
+    <img
+      class="badge__img express-badge__img"
+      src="[object Object]"
+    />
+    <img
+      class="badge__img csharp-badge__img"
+      src="[object Object]"
+    />
+    <img
+      class="badge__img firebase-badge__img"
+      src="[object Object]"
+    />
+    <img
+      class="badge__img firestore-badge__img"
+      src="[object Object]"
+    />
+  </div>
+</article>
+`;

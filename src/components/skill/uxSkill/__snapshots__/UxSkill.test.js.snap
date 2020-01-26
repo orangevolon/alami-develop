@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing components/skill/uxSkill Should render the component correctly 1`] = `
+<article
+  class="skill__article ux-skill__article"
+>
+  <h3
+    class="title__h3"
+  />
+  <p
+    class="description__p"
+  />
+  <div
+    class="badges__div"
+  >
+    <img
+      class="badge__img photoshop-badge__img"
+      src="[object Object]"
+    />
+    <img
+      class="badge__img illustrator-badge__img"
+      src="[object Object]"
+    />
+    <img
+      class="badge__img sketch-badge__img"
+      src="[object Object]"
+    />
+    <img
+      class="badge__img xd-badge__img"
+      src="[object Object]"
+    />
+  </div>
+</article>
+`;

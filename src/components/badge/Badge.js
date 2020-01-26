@@ -1,7 +1,7 @@
-import { withPubSub, withDOM } from "../../hocs";
+import { withDOM } from "../../hocs";
 import "./Badge.scss";
 
-const Badge = ({ src, document, pubSub }) => {
+const Badge = ({ src, document }) => {
   const element = document.createElement("img");
   element.src = src;
   element.className = "badge__img";
@@ -9,4 +9,4 @@ const Badge = ({ src, document, pubSub }) => {
   return element;
 };
 
-export default withPubSub(withDOM(Badge));
+export default withDOM(Badge);

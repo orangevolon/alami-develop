@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing components/skill/FrontendSkill Should render the component correctly 1`] = `
+<article
+  class="skill__article frontend-skill__article"
+>
+  <h3
+    class="title__h3"
+  />
+  <p
+    class="description__p"
+  />
+  <div
+    class="badges__div"
+  >
+    <img
+      class="badge__img css-badge__img"
+      src="[object Object]"
+    />
+    <img
+      class="badge__img html-badge__img"
+      src="[object Object]"
+    />
+    <img
+      class="badge__img vue-badge__img"
+      src="[object Object]"
+    />
+    <img
+      class="badge__img redux-badge__img"
+      src="[object Object]"
+    />
+    <img
+      class="badge__img react-badge__img"
+      src="[object Object]"
+    />
+    <img
+      class="badge__img jest-badge__img"
+      src="[object Object]"
+    />
+    <img
+      class="badge__img js-badge__img"
+      src="[object Object]"
+    />
+  </div>
+</article>
+`;

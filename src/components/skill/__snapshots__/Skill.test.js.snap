@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing components/skill Should render the skill correctly 1`] = `
+<article
+  class="skill__article"
+>
+  <h3
+    class="title__h3"
+  />
+  <p
+    class="description__p"
+  />
+  <div
+    class="badges__div"
+  >
+    <div />
+    <div />
+    <div />
+  </div>
+</article>
+`;

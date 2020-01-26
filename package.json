@@ -4,7 +4,7 @@
   "description": "Personal website",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test",
+    "test": "jest",
     "start": "webpack-dev-server --open",
     "build": "webpack --config webpack.config.js"
   },
@@ -21,6 +21,7 @@
   "devDependencies": {
     "@babel/core": "^7.8.3",
     "@babel/preset-env": "^7.8.3",
+    "babel-jest": "^25.1.0",
     "babel-loader": "^8.0.6",
     "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^3.4.2",
@@ -29,6 +30,7 @@
     "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-import": "^2.20.0",
     "file-loader": "^5.0.2",
+    "jest": "^25.1.0",
     "node-sass": "^4.13.1",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.1.3",
