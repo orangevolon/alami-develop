@@ -6,6 +6,7 @@
 
   height: calc(100vh - 10rem);
   display: flex;
+  overflow: hidden;
 
   .content-wrapper__div {
     @include content-grid;

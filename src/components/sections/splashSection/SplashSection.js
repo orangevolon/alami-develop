@@ -3,6 +3,7 @@ import avatarSrc from "@assets/picture.jpg";
 import { withDOM, withPubSub } from "@hocs";
 
 import "./SplashSection.scss";
+import transform from "../../../lib/transform";
 
 const SplashSection = ({ document, pubSub }) => {
   const element = document.createElement("section");
@@ -38,9 +39,22 @@ const SplashSection = ({ document, pubSub }) => {
   contentWrapper.appendChild(descriptionElement);
 
   pubSub.subscribe(PUBSUB_SCROLL, e => {
-    pictureElement.style.transform = `translateY(${e / 2}px)`;
-    pictureElement.style.filter = `blur(${e / 10}px)`;
-    element.style.clipPath = `circle(${20000 / (e + 1)}px at center)`;
+    element.style.clipPath = transform(e)
+      .cutOff(0, window.innerHeight)
+      .scale(1 / window.innerHeight)
+      .inverseSquare(1)
+      .scale(window.innerWidth)
+      .format(val => `circle(${val}px at center)`);
+
+    pictureElement.style.filter = transform(e)
+      .cutOff(0, window.innerHeight)
+      .scale(100 / window.innerHeight)
+      .format(val => `blur(${val}px)`);
+
+    pictureElement.style.transform = transform(e)
+      .cutOff(0, window.innerHeight)
+      .scale(1 / 2)
+      .format(val => `translateY(${val}px)`);
   });
 
   return element;
