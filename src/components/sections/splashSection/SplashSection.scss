@@ -1,24 +1,23 @@
+@import "../../../assets/styles/grid.scss";
+
 .splash-section__section {
+  @include content-grid;
+
   position: relative;
   width: 100%;
   height: calc(100vh - 10rem);
   background-color: gray;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 10rem;
 
   .title__h1 {
+    grid-area: title;
     position: relative;
-    text-align: center;
     color: white;
     font-size: 5rem;
   }
 
   .description__p {
+    grid-area: description;
     position: relative;
-    text-align: center;
     color: white;
   }
 

@@ -1,0 +1,13 @@
+@mixin content-grid {
+  width: 100vw;
+  padding: 0 3rem;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "badges title"
+    "badges description";
+  column-gap: 4rem;
+  row-gap: 1rem;
+}
