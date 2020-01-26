@@ -1,12 +1,7 @@
+@import "../../assets/styles/grid.scss";
+
 .skill__article {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: auto 1fr;
-  grid-template-areas:
-    "badges title"
-    "badges description";
-  column-gap: 4rem;
-  row-gap: 1rem;
+  @include content-grid;
 
   margin-bottom: 4rem;
 

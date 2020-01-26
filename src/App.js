@@ -1,8 +1,8 @@
 import "./App.scss";
-import { Avatar } from "./components";
 import { PUBSUB_SCROLL } from "./constants";
 import { withPubSub, withDOM } from "./hocs";
 import Skills from "./components/skills/Skills";
+import SplashSection from "./components/sections/splashSection/SplashSection";
 
 const App = ({ pubSub, window }) => {
   // publish scroll event
@@ -12,12 +12,7 @@ const App = ({ pubSub, window }) => {
 
   const element = document.createDocumentFragment();
 
-  const title = document.createElement("h1");
-  title.innerText = "Amir Alami";
-  title.className = "name";
-
-  element.appendChild(Avatar());
-  element.appendChild(title);
+  element.appendChild(SplashSection());
   element.appendChild(Skills());
 
   return element;
