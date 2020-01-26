@@ -16,5 +16,8 @@ module.exports = {
   settings: {
     "import/resolver": "webpack"
   },
-  rules: {}
+  rules: {
+    // Eslint seems to have issue detecting named exports
+    "import/no-cycle": "off"
+  }
 };
