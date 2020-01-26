@@ -1,7 +1,8 @@
-import { withDOM, withPubSub } from "../../../hocs";
+import { PUBSUB_SCROLL } from "@constants";
+import avatarSrc from "@assets/picture.jpg";
+import { withDOM, withPubSub } from "@hocs";
+
 import "./SplashSection.scss";
-import avatarSrc from "../../../assets/picture.jpg";
-import { PUBSUB_SCROLL } from "../../../constants";
 
 const SplashSection = ({ document, pubSub }) => {
   const element = document.createElement("section");

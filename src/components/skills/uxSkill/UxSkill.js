@@ -1,9 +1,9 @@
-import Skill from "../Skill";
-import Badge from "../../badge/Badge";
-import photoshopBadge from "../../../assets/badges/photoshop.svg";
-import illustratorBadge from "../../../assets/badges/illustrator.svg";
-import sketchBadge from "../../../assets/badges/sketch.svg";
-import xdBadge from "../../../assets/badges/xd.svg";
+import { Badge, Skill } from "@components";
+import photoshopBadge from "@assets/badges/photoshop.svg";
+import illustratorBadge from "@assets/badges/illustrator.svg";
+import sketchBadge from "@assets/badges/sketch.svg";
+import xdBadge from "@assets/badges/xd.svg";
+
 import "./UxSkill.scss";
 
 const UxSkill = () => {

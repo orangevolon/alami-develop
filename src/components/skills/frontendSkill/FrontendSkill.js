@@ -1,12 +1,12 @@
-import Badge from "../../badge/Badge";
-import Skill from "../Skill";
-import cssBadge from "../../../assets/badges/css.svg";
-import htmlBadge from "../../../assets/badges/html.svg";
-import vueBadge from "../../../assets/badges/vue.svg";
-import reduxBadge from "../../../assets/badges/redux.svg";
-import reactBadge from "../../../assets/badges/react.svg";
-import jestBadge from "../../../assets/badges/jest.svg";
-import jsBadge from "../../../assets/badges/js.svg";
+import { Badge, Skill } from "@components";
+import cssBadge from "@assets/badges/css.svg";
+import htmlBadge from "@assets/badges/html.svg";
+import vueBadge from "@assets/badges/vue.svg";
+import reduxBadge from "@assets/badges/redux.svg";
+import reactBadge from "@assets/badges/react.svg";
+import jestBadge from "@assets/badges/jest.svg";
+import jsBadge from "@assets/badges/js.svg";
+
 import "./FrontendSkill.scss";
 
 const FrontendSkill = () => {

@@ -1,4 +1,4 @@
-import { withDOM } from "../../hocs";
+import { withDOM } from "@hocs";
 import "./Badge.scss";
 
 const Badge = ({ src, document }) => {

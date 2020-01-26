@@ -1,10 +1,10 @@
-import Skill from "../Skill";
-import Badge from "../../badge/Badge";
-import kubernetesBadge from "../../../assets/badges/kubernetes.svg";
-import dockerBadge from "../../../assets/badges/docker.svg";
-import jenkinsBadge from "../../../assets/badges/jenkins.svg";
-import gcpBadge from "../../../assets/badges/gcp.svg";
-import linuxBadge from "../../../assets/badges/linux.svg";
+import { Badge, Skill } from "@components";
+import kubernetesBadge from "@assets/badges/kubernetes.svg";
+import dockerBadge from "@assets/badges/docker.svg";
+import jenkinsBadge from "@assets/badges/jenkins.svg";
+import gcpBadge from "@assets/badges/gcp.svg";
+import linuxBadge from "@assets/badges/linux.svg";
+
 import "./InfrastructureSkill.scss";
 
 const InfrastructureSkill = () => {

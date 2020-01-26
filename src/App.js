@@ -1,8 +1,7 @@
 import "./App.scss";
-import SplashSection from "@components/sections/splashSection/SplashSection";
+import { SkillsSection, SplashSection } from "@components";
 import { PUBSUB_SCROLL } from "./constants";
 import { withPubSub, withDOM } from "./hocs";
-import Skills from "./components/skills/Skills";
 // import SplashSection from "./components/sections/splashSection/SplashSection";
 
 const App = ({ pubSub, window }) => {
@@ -14,7 +13,7 @@ const App = ({ pubSub, window }) => {
   const element = document.createDocumentFragment();
 
   element.appendChild(SplashSection());
-  element.appendChild(Skills());
+  element.appendChild(SkillsSection());
 
   return element;
 };

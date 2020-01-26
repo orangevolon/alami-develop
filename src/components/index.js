@@ -1,3 +1,3 @@
-import Avatar from "./avatar/Avatar";
-
-export { Avatar };
+export * from "./common";
+export * from "./sections";
+export * from "./skills";
