@@ -1,14 +1,13 @@
 import Badge from "./Badge";
 
 jest.mock("../../hocs", () => ({
-  withPubSub: e => e,
-  withDOM: e => e
+  withPubSub: Component => Component,
+  withDOM: Component => props =>
+    Component({ document: global.document, ...props })
 }));
 
 describe("Testing Components/Badge", () => {
-  it("SHould return something", () => {
-    expect(() => {
-      Badge();
-    }).toThrow();
+  it("Should render the Badge correctly", () => {
+    expect(Badge({ src: "test/path" })).toMatchSnapshot();
   });
 });

@@ -16,7 +16,7 @@ export default () => {
 
     return {
       unsubscribe: () => {
-        subscribers = subscribers.filter(sub => sub !== cb);
+        subscribers = subscribers[channel].filter(sub => sub !== cb);
       }
     };
   };

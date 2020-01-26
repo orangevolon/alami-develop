@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing components/skill/InfrastructureSkill Should render the component correctly 1`] = `
+<article
+  class="skill__article infrastructure-skill__article"
+>
+  <h3
+    class="title__h3"
+  />
+  <p
+    class="description__p"
+  />
+  <div
+    class="badges__div"
+  >
+    <img
+      class="badge__img kubernetes-badge__img"
+      src="[object Object]"
+    />
+    <img
+      class="badge__img docker-badge__img"
+      src="[object Object]"
+    />
+    <img
+      class="badge__img jenkins-badge__img"
+      src="[object Object]"
+    />
+    <img
+      class="badge__img gcp-badge__img"
+      src="[object Object]"
+    />
+    <img
+      class="badge__img linux-badge__img"
+      src="[object Object]"
+    />
+  </div>
+</article>
+`;
