@@ -1,6 +1,6 @@
 import { withDOM, withPubSub } from "../../../hocs";
 import "./SplashSection.scss";
-import avatarSrc from "../../../assets/avatar.png";
+import avatarSrc from "../../../assets/picture.jpg";
 import { PUBSUB_SCROLL } from "../../../constants";
 
 const SplashSection = ({ document, pubSub }) => {
