@@ -2,6 +2,8 @@
 
 ## Thanks for stopping by ☺️
 
-This is the open source code of my personal website.
+This is the source code of my personal website.
+The project has **0 Runtime dependancies** and uses vanilla JS.
+Webpack is used for bundling though.
 
-Still WIP though
+The live version is available at: https://alami.dev
