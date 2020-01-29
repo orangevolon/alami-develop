@@ -19,18 +19,22 @@ exports[`Testing components/skills/Skill Should render the component correctly 1
       <img
         class="badge__img photoshop-badge__img"
         src="[object Object]"
+        style="transform-origin: center center;"
       />
       <img
         class="badge__img illustrator-badge__img"
         src="[object Object]"
+        style="transform-origin: center center;"
       />
       <img
         class="badge__img sketch-badge__img"
         src="[object Object]"
+        style="transform-origin: center center;"
       />
       <img
         class="badge__img xd-badge__img"
         src="[object Object]"
+        style="transform-origin: center center;"
       />
     </div>
   </article>
@@ -49,30 +53,37 @@ exports[`Testing components/skills/Skill Should render the component correctly 1
       <img
         class="badge__img css-badge__img"
         src="[object Object]"
+        style="transform-origin: center center;"
       />
       <img
         class="badge__img html-badge__img"
         src="[object Object]"
+        style="transform-origin: center center;"
       />
       <img
         class="badge__img vue-badge__img"
         src="[object Object]"
+        style="transform-origin: center center;"
       />
       <img
         class="badge__img redux-badge__img"
         src="[object Object]"
+        style="transform-origin: center center;"
       />
       <img
         class="badge__img react-badge__img"
         src="[object Object]"
+        style="transform-origin: center center;"
       />
       <img
         class="badge__img jest-badge__img"
         src="[object Object]"
+        style="transform-origin: center center;"
       />
       <img
         class="badge__img js-badge__img"
         src="[object Object]"
+        style="transform-origin: center center;"
       />
     </div>
   </article>
@@ -91,22 +102,27 @@ exports[`Testing components/skills/Skill Should render the component correctly 1
       <img
         class="node-badge__img"
         src="[object Object]"
+        style="transform-origin: center center;"
       />
       <img
         class="badge__img express-badge__img"
         src="[object Object]"
+        style="transform-origin: center center;"
       />
       <img
         class="badge__img csharp-badge__img"
         src="[object Object]"
+        style="transform-origin: center center;"
       />
       <img
         class="badge__img firebase-badge__img"
         src="[object Object]"
+        style="transform-origin: center center;"
       />
       <img
         class="badge__img firestore-badge__img"
         src="[object Object]"
+        style="transform-origin: center center;"
       />
     </div>
   </article>
@@ -125,22 +141,27 @@ exports[`Testing components/skills/Skill Should render the component correctly 1
       <img
         class="badge__img kubernetes-badge__img"
         src="[object Object]"
+        style="transform-origin: center center;"
       />
       <img
         class="badge__img docker-badge__img"
         src="[object Object]"
+        style="transform-origin: center center;"
       />
       <img
         class="badge__img jenkins-badge__img"
         src="[object Object]"
+        style="transform-origin: center center;"
       />
       <img
         class="badge__img gcp-badge__img"
         src="[object Object]"
+        style="transform-origin: center center;"
       />
       <img
         class="badge__img linux-badge__img"
         src="[object Object]"
+        style="transform-origin: center center;"
       />
     </div>
   </article>

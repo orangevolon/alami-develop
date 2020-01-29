@@ -16,18 +16,22 @@ exports[`Testing components/skill/uxSkill Should render the component correctly 
     <img
       class="badge__img photoshop-badge__img"
       src="[object Object]"
+      style="transform-origin: center center;"
     />
     <img
       class="badge__img illustrator-badge__img"
       src="[object Object]"
+      style="transform-origin: center center;"
     />
     <img
       class="badge__img sketch-badge__img"
       src="[object Object]"
+      style="transform-origin: center center;"
     />
     <img
       class="badge__img xd-badge__img"
       src="[object Object]"
+      style="transform-origin: center center;"
     />
   </div>
 </article>

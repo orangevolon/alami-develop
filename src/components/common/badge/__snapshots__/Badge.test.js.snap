@@ -4,5 +4,6 @@ exports[`Testing Components/Badge Should render the Badge correctly 1`] = `
 <img
   class="badge__img"
   src="test/path"
+  style="transform-origin: center center;"
 />
 `;
