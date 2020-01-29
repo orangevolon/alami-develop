@@ -6,7 +6,8 @@ module.exports = {
     "^@components(.*)$": "<rootDir>/src/components$1",
     "^@constants(.*)$": "<rootDir>/src/constants$1",
     "^@assets(.*)$": "<rootDir>/src/assets$1",
-    "^@hocs(.*)$": "<rootDir>/src/hocs$1"
+    "^@hocs(.*)$": "<rootDir>/src/hocs$1",
+    "^@lib(.*)$": "<rootDir>/src/lib$1"
   },
   moduleFileExtensions: ["js", "jsx", "json"],
   transform: {
