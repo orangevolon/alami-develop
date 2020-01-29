@@ -32,7 +32,8 @@ const BackendSkill = () => {
       firestoreBadgeElement
     ],
     title: "Back End Development",
-    description: "Lorem Ipsum"
+    description: `Most of my back end development experience is with C# and .net framework.
+    In the last year however, I got more involved with Node, and express framework.`
   });
   skillElement.classList.add("backend-skill__article");
 
