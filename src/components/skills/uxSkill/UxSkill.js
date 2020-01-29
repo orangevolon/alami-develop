@@ -27,7 +27,9 @@ const UxSkill = () => {
       xdBadgeElement
     ],
     title: "UI/UX",
-    description: "Lorem Ipsum"
+    description: `
+    Even though, I’m not a UI/UX designer now, I have a robust understanding of the user experience concepts, from color psychology to the methodologies of the user research. I’ve also mastered several design tools including Sketch, Xd, Illustrator and Photoshop over the course of the last decade.
+    `
   });
   skillElement.classList.add("ux-skill__article");
 

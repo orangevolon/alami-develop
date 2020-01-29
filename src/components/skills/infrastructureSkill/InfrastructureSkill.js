@@ -32,7 +32,7 @@ const InfrastructureSkill = () => {
       linuxBadgeElement
     ],
     title: "Infrastructure",
-    description: "Lorem Ipsum"
+    description: `My most notable experience with infrastructure is the deployment of a platform, including backend and frontend apps on the GKE with Jenkins and Gitlab.`
   });
   skillElement.classList.add("infrastructure-skill__article");
 

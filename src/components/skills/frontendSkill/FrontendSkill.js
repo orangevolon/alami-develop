@@ -42,7 +42,8 @@ const FrontendSkill = () => {
       jsBadgeElement
     ],
     title: "Front End Development",
-    description: "Lorem Ipsum"
+    description: `The front-end is my strongest point in terms of experience and knowledge. I have worked with several front-end methodologies and technologies over the last decade, In the last two years, however, my main focus was React, React Native and VueJs.
+    In the last two years, I have architectured 4 React web projects, 1 React Native project and 2 VueJS projects. I have also collaborated on many more front-end projects.`
   });
   skillElement.classList.add("frontend-skill__article");
 
