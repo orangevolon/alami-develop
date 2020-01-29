@@ -41,20 +41,19 @@ const SplashSection = ({ document, pubSub }) => {
   pubSub.subscribe(PUBSUB_SCROLL, e => {
     element.style.clipPath = transform(e)
       .cutOff(0, window.innerHeight)
-      .scale(1 / window.innerHeight)
+      .scale(5 / window.innerHeight)
       .inverseSquare(1)
-      .scale(window.innerWidth)
+      .scale(window.innerHeight * 1.4)
       .format(val => `circle(${val}px at center)`);
 
-    pictureElement.style.filter = transform(e)
-      .cutOff(0, window.innerHeight)
-      .scale(100 / window.innerHeight)
-      .format(val => `blur(${val}px)`);
-
-    pictureElement.style.transform = transform(e)
-      .cutOff(0, window.innerHeight)
-      .scale(1 / 2)
-      .format(val => `translateY(${val}px)`);
+    // pictureElement.style.filter = transform(e)
+    //   .cutOff(0, window.innerHeight)
+    //   .scale(100 / window.innerHeight)
+    //   .format(val => `blur(${val}px)`);
+    // pictureElement.style.transform = transform(e)
+    //   .cutOff(0, window.innerHeight)
+    //   .scale(1 / 2)
+    //   .format(val => `translateY(${val}px)`);
   });
 
   return element;

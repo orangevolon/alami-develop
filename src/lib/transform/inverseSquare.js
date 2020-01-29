@@ -1,1 +1,2 @@
-export default (input, offset = 0) => (1 / (input + offset)) ** 2;
+export default (input, offset = 0, coeff = 1) =>
+  1 / ((input * coeff) ** 2 + offset);
