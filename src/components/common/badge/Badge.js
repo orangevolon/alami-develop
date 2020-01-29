@@ -1,7 +1,7 @@
 import { withDOM, withPubSub } from "@hocs";
 import { PUBSUB_SCROLL } from "@constants";
+import { transform } from "@lib";
 import "./Badge.scss";
-import transform from "../../../lib/transform";
 
 const Badge = ({ src, document, window, pubSub }) => {
   const element = document.createElement("img");

@@ -16,22 +16,27 @@ exports[`Testing components/skill/FrontendSkill Should render the component corr
     <img
       class="node-badge__img"
       src="[object Object]"
+      style="transform-origin: center center;"
     />
     <img
       class="badge__img express-badge__img"
       src="[object Object]"
+      style="transform-origin: center center;"
     />
     <img
       class="badge__img csharp-badge__img"
       src="[object Object]"
+      style="transform-origin: center center;"
     />
     <img
       class="badge__img firebase-badge__img"
       src="[object Object]"
+      style="transform-origin: center center;"
     />
     <img
       class="badge__img firestore-badge__img"
       src="[object Object]"
+      style="transform-origin: center center;"
     />
   </div>
 </article>

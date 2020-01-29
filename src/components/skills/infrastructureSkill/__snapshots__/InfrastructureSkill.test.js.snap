@@ -16,22 +16,27 @@ exports[`Testing components/skill/InfrastructureSkill Should render the componen
     <img
       class="badge__img kubernetes-badge__img"
       src="[object Object]"
+      style="transform-origin: center center;"
     />
     <img
       class="badge__img docker-badge__img"
       src="[object Object]"
+      style="transform-origin: center center;"
     />
     <img
       class="badge__img jenkins-badge__img"
       src="[object Object]"
+      style="transform-origin: center center;"
     />
     <img
       class="badge__img gcp-badge__img"
       src="[object Object]"
+      style="transform-origin: center center;"
     />
     <img
       class="badge__img linux-badge__img"
       src="[object Object]"
+      style="transform-origin: center center;"
     />
   </div>
 </article>
