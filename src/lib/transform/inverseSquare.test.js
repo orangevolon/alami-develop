@@ -6,6 +6,6 @@ describe("Testing transforms/inverseSquare", () => {
   });
 
   it("Should add offset to the denominator when specified", () => {
-    expect(inverseSquare(2, 1)).toBe(1 / 9);
+    expect(inverseSquare(2, 1)).toBe(1 / 5);
   });
 });
