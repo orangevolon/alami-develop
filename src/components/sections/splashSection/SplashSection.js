@@ -50,10 +50,11 @@ const SplashSection = ({ document, pubSub }) => {
     //   .cutOff(0, window.innerHeight)
     //   .scale(100 / window.innerHeight)
     //   .format(val => `blur(${val}px)`);
-    // pictureElement.style.transform = transform(e)
-    //   .cutOff(0, window.innerHeight)
-    //   .scale(1 / 2)
-    //   .format(val => `translateY(${val}px)`);
+
+    pictureElement.style.transform = transform(e)
+      .cutOff(0, window.innerHeight)
+      .scale(1 / 2)
+      .format(val => `translateY(${val}px)`);
   });
 
   return element;
