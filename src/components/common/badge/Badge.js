@@ -9,7 +9,7 @@ const Badge = ({ src, document, window, pubSub }) => {
   element.className = "badge__img";
   element.style.transformOrigin = "center center";
 
-  pubSub.subscribe(PUBSUB_SCROLL, e => {
+  pubSub.subscribe(PUBSUB_SCROLL, () => {
     element.style.transform = transform(-element.getBoundingClientRect().y)
       .offset(window.innerHeight / 2)
       .offset(-element.getBoundingClientRect().height / 2)
