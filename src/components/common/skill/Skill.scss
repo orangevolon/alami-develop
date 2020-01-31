@@ -8,6 +8,9 @@
   .badges__div {
     position: relative;
     grid-area: badges;
+    width: 100%;
+    max-width: 400px;
+    justify-self: center;
   }
 
   .title__h3 {
