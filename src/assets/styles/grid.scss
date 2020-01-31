@@ -1,6 +1,6 @@
 @mixin content-grid {
   width: 100vw;
-  max-width: 1280px;
+  max-width: 1036px;
   padding: 0 3rem;
   margin: auto;
   display: grid;
@@ -13,8 +13,8 @@
   column-gap: 4rem;
   row-gap: 1rem;
 
-  @media (min-width: 600px) {
-    grid-template-columns: 1fr 2fr;
+  @media only screen and (min-width: 800px) {
+    grid-template-columns: minmax(400px, 1fr) 2fr;
     grid-template-rows: auto 1fr;
     grid-template-areas:
       "badges title"
