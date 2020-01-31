@@ -1,4 +1,4 @@
-@mixin badge($ratio, $base-size: 100px) {
+@mixin badge($ratio, $base-size: 25%) {
   $badge-size: $ratio * $base-size;
 
   width: $badge-size;
