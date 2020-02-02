@@ -8,7 +8,13 @@ import {
   SW_DIR_UP
 } from "@constants";
 
-const ScrollWatch = ({ pubSub, window, child }) => {
+const ScrollWatch = ({
+  pubSub,
+  window,
+  child,
+  topMargin = 0,
+  bottomMargin = 0
+}) => {
   let lastTop;
   let lastBottom;
 
@@ -24,16 +30,19 @@ const ScrollWatch = ({ pubSub, window, child }) => {
     const { top, bottom } = child.getBoundingClientRect();
     const { innerHeight: windowHeight } = window;
 
-    if (top >= windowHeight && lastTop < windowHeight) {
+    const bottomThreshold = windowHeight - bottomMargin * windowHeight;
+    const topThreshold = topMargin * windowHeight;
+
+    if (top >= bottomThreshold && lastTop < bottomThreshold) {
       // Exit from bottom
       handleScrollEvent(SW_TYPE_EXIT, SW_DIR_DOWN);
-    } else if (top <= windowHeight && lastTop > windowHeight) {
+    } else if (top <= bottomThreshold && lastTop > bottomThreshold) {
       // Enter from bottom
       handleScrollEvent(SW_TYPE_ENTER, SW_DIR_UP);
-    } else if (bottom >= 0 && lastBottom < 0) {
+    } else if (bottom >= topThreshold && lastBottom < topThreshold) {
       // Enter from top
       handleScrollEvent(SW_TYPE_ENTER, SW_DIR_DOWN);
-    } else if (bottom <= 0 && lastBottom > 0) {
+    } else if (bottom <= topThreshold && lastBottom > topThreshold) {
       // Exit from top
       handleScrollEvent(SW_TYPE_EXIT, SW_DIR_UP);
     }

@@ -13,7 +13,7 @@ jest.mock("@hocs", () => ({
   withDOM: Component => Component
 }));
 
-describe("Testing components/slide", () => {
+describe("Testing components/ScrollWatch", () => {
   let subscribeFunc;
   let top = 0;
   const windowHeight = 1000;
