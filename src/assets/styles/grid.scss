@@ -1,23 +1,21 @@
+@import "@assets/styles/media.scss";
+
 @mixin content-grid {
   width: 100vw;
-  max-width: 1036px;
   padding: 0 3rem;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(auto, 3);
+  grid-template-rows: repeat(auto, 2);
   grid-template-areas:
-    "badges"
-    "title"
-    "description";
+    "aside"
+    "content";
   column-gap: 4rem;
   row-gap: 1rem;
 
-  @media only screen and (min-width: 800px) {
-    grid-template-columns: minmax(400px, 1fr) 2fr;
-    grid-template-rows: auto 1fr;
-    grid-template-areas:
-      "badges title"
-      "badges description";
+  @include for-desktop {
+    grid-template-columns: auto minmax(auto, 400px) minmax(auto, 800px) auto;
+    grid-template-rows: auto;
+    grid-template-areas: ". aside content .";
   }
 }

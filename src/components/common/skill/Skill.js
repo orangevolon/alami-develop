@@ -2,18 +2,22 @@ import { withDOM } from "@hocs";
 import "./Skill.scss";
 
 const Skill = ({ badges = [], document, title = "", description = "" }) => {
-  const element = document.createElement("article");
-  element.className = "skill__article";
+  const element = document.createElement("section");
+  element.className = "skill__section";
+
+  const contentElement = document.createElement("article");
+  contentElement.className = "content__article";
+  element.appendChild(contentElement);
 
   const titleElement = document.createElement("h3");
   titleElement.className = "title__h3";
   titleElement.innerText = title;
-  element.appendChild(titleElement);
+  contentElement.appendChild(titleElement);
 
   const descriptionElement = document.createElement("p");
   descriptionElement.className = "description__p";
   descriptionElement.innerText = description;
-  element.appendChild(descriptionElement);
+  contentElement.appendChild(descriptionElement);
 
   const badgeContainerElement = document.createElement("div");
   badgeContainerElement.className = "badges__div";

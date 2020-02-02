@@ -1,0 +1,11 @@
+$color-primary: white;
+$color-secondary: #023440;
+$color-accent: #419fd9;
+
+@mixin theme-default {
+  color: $color-secondary;
+}
+
+@mixin theme-dark {
+  color: $color-primary;
+}

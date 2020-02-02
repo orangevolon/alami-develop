@@ -16,14 +16,14 @@ const SplashSection = ({ document, pubSub }) => {
   pictureElement.height = 200;
   element.appendChild(pictureElement);
 
-  const contentWrapper = document.createElement("div");
-  contentWrapper.className = "content-wrapper__div";
-  element.appendChild(contentWrapper);
+  const contentElement = document.createElement("article");
+  contentElement.className = "content__article";
+  element.appendChild(contentElement);
 
   const titleElement = document.createElement("h1");
   titleElement.className = "title__h1";
   titleElement.innerText = "Amir Alami";
-  contentWrapper.appendChild(titleElement);
+  contentElement.appendChild(titleElement);
 
   const age = Math.floor(
     (Date.now() - new Date(1989, 6, 15)) / (1000 * 3600 * 24 * 365)
@@ -36,7 +36,7 @@ const SplashSection = ({ document, pubSub }) => {
     ${age} years old,<br/>
     +10 years of experience
   `;
-  contentWrapper.appendChild(descriptionElement);
+  contentElement.appendChild(descriptionElement);
 
   pubSub.subscribe(PUBSUB_SCROLL, e => {
     element.style.clipPath = transform(e)
@@ -45,11 +45,6 @@ const SplashSection = ({ document, pubSub }) => {
       .inverseSquare(1)
       .scale(window.innerHeight * 1.4)
       .format(val => `circle(${val}px at center)`);
-
-    // pictureElement.style.filter = transform(e)
-    //   .cutOff(0, window.innerHeight)
-    //   .scale(100 / window.innerHeight)
-    //   .format(val => `blur(${val}px)`);
 
     pictureElement.style.transform = transform(e)
       .cutOff(0, window.innerHeight)

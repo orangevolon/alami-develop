@@ -1,32 +1,19 @@
 @import "@assets/styles/grid.scss";
 @import "@assets/styles/section.scss";
+@import "@assets/styles/color.scss";
 
 .splash-section__section {
   @include section;
+  @include content-grid;
 
-  height: calc(100vh - 10rem);
-  display: flex;
   overflow: hidden;
+  height: 100vh;
 
-  .content-wrapper__div {
-    @include content-grid;
+  .content__article {
+    @include theme-dark;
 
-    margin-top: auto;
-    margin-bottom: 0;
-  }
-
-  .title__h1 {
-    grid-area: title;
-    position: relative;
-    color: white;
-    font-size: 3rem;
-    text-transform: uppercase;
-  }
-
-  .description__p {
-    grid-area: description;
-    position: relative;
-    color: white;
+    grid-area: content;
+    align-self: flex-end;
   }
 
   .picture__img {
@@ -37,6 +24,7 @@
     height: 100%;
     object-fit: cover;
     opacity: 0.2;
+    z-index: -1;
   }
 
   &:before {
@@ -48,5 +36,6 @@
     width: 100%;
     height: 100%;
     background: linear-gradient(90deg, #419fd9 0%, #023440 100%);
+    z-index: -1;
   }
 }

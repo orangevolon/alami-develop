@@ -1,0 +1,13 @@
+$bp-desktop: 600px;
+
+@mixin for-desktop {
+  @media screen and (min-width: $bp-desktop) {
+    @content;
+  }
+}
+
+@mixin for-mobile {
+  @media screen and (max-width: $bp-desktop) {
+    @content;
+  }
+}

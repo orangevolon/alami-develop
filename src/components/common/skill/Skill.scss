@@ -1,23 +1,21 @@
 @import "@assets/styles/grid.scss";
+@import "@assets/styles/section.scss";
 
-.skill__article {
+.skill__section {
   @include content-grid;
+  @include section;
 
   margin-bottom: 4rem;
 
   .badges__div {
     position: relative;
-    grid-area: badges;
+    grid-area: aside;
     width: 100%;
     max-width: 400px;
     justify-self: center;
   }
 
-  .title__h3 {
-    grid-area: title;
-  }
-
-  .description__p {
-    grid-area: description;
+  .content__article {
+    grid-area: content;
   }
 }
